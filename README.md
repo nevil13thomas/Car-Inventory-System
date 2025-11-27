@@ -189,11 +189,34 @@ Relationship:
 
 * One Owner → Many Cars (1:N)
 
-Diagram:
+ERM Diagram:
 
-```
-owners (1) ────< (N) cars
-```
++-----------------+
+|     OWNERS      |
++-----------------+
+| PK id: Integer  |
+| name: String    |
+| license_number: |
+|   String (U)    |
++-----------------+
+         |
+         | 1
+         |
+      has (1:N)
+         |
+         | N
+         |
++-----------------+
+|      CARS       |
++-----------------+
+| PK id: Integer  |
+| color: String   |
+| make: String    |
+| year: Integer   |
+| picture: String |
+| FK owner_id:    |
+|   Integer       |
++-----------------+
 
 ---
 
