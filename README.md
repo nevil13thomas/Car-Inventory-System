@@ -191,32 +191,24 @@ Relationship:
 
 ERM Diagram:
 
-+-----------------+
-|     OWNERS      |
-+-----------------+
-| PK id: Integer  |
-| name: String    |
-| license_number: |
-|   String (U)    |
-+-----------------+
-         |
-         | 1
-         |
-      has (1:N)
-         |
-         | N
-         |
-+-----------------+
-|      CARS       |
-+-----------------+
-| PK id: Integer  |
-| color: String   |
-| make: String    |
-| year: Integer   |
-| picture: String |
-| FK owner_id:    |
-|   Integer       |
-+-----------------+
+```mermaid
+erDiagram
+    OWNERS ||--o{ CARS : "has"
+
+    OWNERS {
+        int id PK "Primary Key"
+        string name "Not Null"
+        string license_number "Unique, Not Null"
+    }
+
+    CARS {
+        int id PK "Primary Key"
+        string color "Not Null"
+        string make "Not Null"
+        int year "Not Null (Range: 1925-2025)"
+        string picture "Optional"
+        int owner_id FK "Required"
+    }
 
 ---
 
