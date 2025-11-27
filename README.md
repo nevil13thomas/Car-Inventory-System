@@ -4,7 +4,7 @@ A simple, and clean **FastAPI + SQLAlchemy** project that provides a RESTful API
 This project demonstrates:
 * Well‑structured FastAPI application design
 * A relational database schema using SQLAlchemy ORM
-* Full CRUD operations for Cars and Owners
+* View Owners and Full CRUD operations for Cars
 * Automated unit testing with pytest
 
 ---
@@ -98,11 +98,9 @@ pytest -s
 
 ---
 
-## API endpoints along with example API Requests
+## API endpoints along with example cURL API Requests
 
 ### Create Owner
-
-#### **cURL**
 
 ```bash
 curl -X POST "http://127.0.0.1:8000/owners" \
