@@ -38,7 +38,7 @@ This project demonstrates:
 ## Project Structure
 
 ```
-car-inventory/
+Car-Inventory-System/
 ├── app/
 │   ├── __init__.py
 │   ├── main.py              # FastAPI application
