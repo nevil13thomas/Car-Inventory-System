@@ -61,8 +61,8 @@ car-inventory/
 ### 1. Clone the Project
 
 ```bash
-git clone <your-repo-url>
-cd car-inventory
+git clone https://github.com/nevil13thomas/Car-Inventory-System.git
+cd Car-Inventory-System
 ```
 
 ### 2. Create & Activate a Virtual Environment (MacOS)
